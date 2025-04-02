@@ -13,6 +13,7 @@ class Cell:
         self._y2 = None
         self._win = win
         self.center = None
+        self.visited = False
 
     
     def draw(self, x1, y1, x2, y2):
@@ -45,3 +46,6 @@ class Cell:
             fill_color = "gray"
         line = Line(self.center, to_cell.center)
         line.draw(self._win.canvas, fill_color)
+
+
+    
