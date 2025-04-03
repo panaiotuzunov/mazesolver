@@ -13,7 +13,7 @@ class Window:
     
     def redraw(self):
         self.root.update_idletasks()
-        self.root.update
+        self.root.update()
 
 
     def wait_for_close(self):
